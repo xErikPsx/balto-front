@@ -11,8 +11,12 @@
 
 // * Import molecules
 @import './Molecules/spinner.scss';
+@import './Molecules/navbar.scss';
+@import './Molecules/listItem.scss';
+@import './Molecules/sidebar.scss';
 
 // * Import organisms
+@import './Organisms/patientCard.scss';
 @import './Organisms/symptomCard.scss';
 
 // * Import templates
@@ -20,5 +24,6 @@
 // * Import pages
 @import './pages/home.scss';
 @import './pages/symptomsList.scss';
+@import './pages/patientList.scss';
 @import './pages/landingPage.scss';
 @import './pages/error404.scss';

@@ -1,0 +1,7 @@
+.list__item{
+    color: $green;
+    font-size: 15px;
+    &.edad::after{
+        content: ' años';
+    }
+}
