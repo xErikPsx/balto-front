@@ -1,10 +1,9 @@
 .landingPage {
   height: 100vh;
-  // background-color: red;
 
   &__header {
     padding: 0.5em 1em 1em 1em;
-    background-color: #97e5ef;
+    background-color: #50d890;
     margin-bottom: 1em;
     padding-bottom: 3.5em;
     text-align: center;
@@ -15,9 +14,42 @@
     }
   }
 
+  &__wallpaper {
+    // width: 100vw;
+    height: 100%;
+    margin-top: -100px;
+  }
+
+  &__virus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    // background-color: white;
+    // margin-top: -10px;
+    // padding-bottom: -10px;
+    border-radius: 5px;
+
+    &__gif {
+      width: 94%;
+      background-color: white;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+  }
+
+  &__gif {
+    border-radius: 5px;
+  }
+
   // * Section
   &__section {
-    // background-color: #f8e1f4;
+    background-color: white;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -52,6 +84,10 @@
 // * Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .landingPage {
+    &__wallpaper {
+      width: 100%;
+    }
+
     &__section {
       margin: 30px 100px 30px 100px;
       &__title,
