@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 // * Page
-import SymptomsList from "../../components/Pages/Symptoms/SymptomsList";
+import SymptomsList from '../../components/Pages/Symptoms/SymptomsList';
 
 function Symptomps() {
   return (
