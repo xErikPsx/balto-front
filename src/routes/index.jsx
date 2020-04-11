@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Spinner from '../shared/spinner';
 
-const Home = lazy(() => import('../pages/Home'));
+const Home = lazy(() => import('../components/Pages/Home'));
 
 const AppRoutes = () => {
   return (
