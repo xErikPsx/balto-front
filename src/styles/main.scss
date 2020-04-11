@@ -4,16 +4,13 @@
 // * Import variables
 @import './Base/variables.scss';
 
-// * Import utilities
-@import './base/utilities.scss';
-
 // * Import atoms
 
 // * Import molecules
+@import './Molecules/spinner.scss';
 
 // * Import organisms
 
 // * Import templates
 
 // * Import pages
-@import './pages/home.css';

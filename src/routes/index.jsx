@@ -3,13 +3,13 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // ? Components
 
-import Spinner from '../shared/spinner';
+import Spinner from '../components/Molecules/spinner';
 
 const Home = lazy(() => import('../components/Pages/Home'));
 
 const AppRoutes = () => {
   return (
-    <Suspense fallback={<Spinner />}>
+    <Suspense fallback={<Spinner height={150} width={150} />}>
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
