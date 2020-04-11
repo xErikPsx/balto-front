@@ -5,7 +5,11 @@
     width: 30vw;
     left: 0px;
     transition: 0.3s;
+    z-index: 999;
     &.hide{
+        & .logo{
+            font-size: 1px;
+        }
         & ul .ant-menu-item-selected{
             display: none;
         }
