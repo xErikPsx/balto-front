@@ -12,7 +12,10 @@ function Error404Page() {
       <h3 className="error404Page__messagge">
         {' '}
         Lo sentimos, pero la página que estás buscando no la podimos encontrar
-        <span> 🙁</span>
+        <span role="img" aria-label="Sad">
+          {' '}
+          🙁
+        </span>
       </h3>
       <Link to="../" className="error404Page__link">
         Haz clic o toca aquí para volver al inicio
