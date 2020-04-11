@@ -1,0 +1,16 @@
+/* Aquí se importan todos los estilos */
+
+/* Variables css: colores, efectos, etc */
+@import './abstract/variables.css';
+
+/* Animaciones */
+@import './base/animation.css';
+/* Estilos básicos */
+@import './base/base.css';
+/* Margenes, paddgins, bordes */
+@import './base/utilities.css';
+
+/* Estilos de componenntes */
+
+/* Estilos de cotenedores pages */
+@import './pages/home.css';

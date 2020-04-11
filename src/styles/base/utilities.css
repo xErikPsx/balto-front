@@ -1,0 +1,9 @@
+/* Utilidades como colores específicos, margenes, paddings, bordes */
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.centerContent{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
