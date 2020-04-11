@@ -1,0 +1,36 @@
+.error404Page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__dogContainer {
+    margin: 20px;
+  }
+  &__title {
+    color: rebeccapurple;
+    font-size: 2.5em;
+  }
+
+  &__messagge {
+    margin: 20px;
+    font-size: 1.5em;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: blue;
+  }
+
+  &__link:hover {
+    color: red;
+    transition: 0.3s;
+  }
+
+  &__link:visited {
+    text-decoration: none;
+  }
+}
