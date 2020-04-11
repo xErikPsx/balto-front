@@ -13,7 +13,6 @@ import grafica02 from '../../../media/grafica02.gif';
 function LandingPage() {
   return (
     <div className="landingPage">
-      <h2>Navbar Here</h2>
       <header className="landingPage__header">
         <img
           src="https://cdn130.picsart.com/296232172285211.png?type=webp&to=min&r=640"
@@ -40,19 +39,31 @@ function LandingPage() {
 
       <div className="landingPage__virus">
         <div className="landingPage__virus__gif">
-          <img className="landingPage__gif" src={grafica} alt="virus" />
+          <img
+            className="landingPage__gif landingPage__graph"
+            src={grafica}
+            alt="virus"
+          />
         </div>
       </div>
 
       <div className="landingPage__virus">
         <div className="landingPage__virus__gif">
-          <img className="landingPage__gif" src={grafica01} alt="virus" />
+          <img
+            className="landingPage__gif landingPage__graph"
+            src={grafica01}
+            alt="virus"
+          />
         </div>
       </div>
 
       <div className="landingPage__virus">
         <div className="landingPage__virus__gif">
-          <img className="landingPage__gif" src={grafica02} alt="virus" />
+          <img
+            className="landingPage__gif landingPage__graph"
+            src={grafica02}
+            alt="virus"
+          />
         </div>
       </div>
 

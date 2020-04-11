@@ -47,6 +47,10 @@
     border-radius: 5px;
   }
 
+  &__graph {
+    width: 100%;
+  }
+
   // * Section
   &__section {
     background-color: white;
@@ -84,6 +88,10 @@
 // * Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .landingPage {
+    &__graph {
+      width: 60%;
+    }
+
     &__wallpaper {
       width: 100%;
     }
