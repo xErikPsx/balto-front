@@ -1,14 +1,16 @@
-import React, { Suspense, lazy } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Spinner from "../shared/spinner";
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-// * Containers
-const Home = lazy(() => import("../components/Pages/Home"));
-const Symptoms = lazy(() => import("../containers/Symptoms/Symptoms"));
+// ? Components
+import Spinner from '../components/Molecules/spinner';
+
+const Home = lazy(() => import('../components/Pages/Home'));
+
+const Symptoms = lazy(() => import('../containers/Symptoms/Symptoms'));
 
 const AppRoutes = () => {
   return (
-    <Suspense fallback={<Spinner />}>
+    <Suspense fallback={<Spinner height={150} width={150} />}>
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
