@@ -5,7 +5,7 @@
 @import './Base/variables.scss';
 
 // * Import utilities
-@import './base/utilities.scss';
+@import './Utilities/utilities.scss';
 
 // * Import atoms
 
@@ -16,4 +16,4 @@
 // * Import templates
 
 // * Import pages
-@import './pages/home.css';
+@import './pages/home.scss';
