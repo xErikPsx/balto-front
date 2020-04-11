@@ -10,10 +10,15 @@
 // * Import atoms
 
 // * Import molecules
+@import './Molecules/spinner.scss';
 
 // * Import organisms
+@import './Organisms/symptomCard.scss';
 
 // * Import templates
 
 // * Import pages
 @import './pages/home.scss';
+@import './pages/symptomsList.scss';
+@import './pages/landingPage.scss';
+@import './pages/error404.scss';
