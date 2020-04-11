@@ -4,6 +4,9 @@
 // * Import variables
 @import './Base/variables.scss';
 
+// * Import utilities
+@import './Utilities/utilities.scss';
+
 // * Import atoms
 
 // * Import molecules
@@ -14,3 +17,5 @@
 // * Import templates
 
 // * Import pages
+@import './pages/home.scss';
+@import './pages/symptomsList.scss';
