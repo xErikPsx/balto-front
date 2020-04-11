@@ -1,20 +1,21 @@
 // * Import base specs
-@import "./Base/base.scss";
+@import './Base/base.scss';
 
 // * Import variables
-@import "./Base/variables.scss";
+@import './Base/variables.scss';
 
 // * Import utilities
-@import "./Utilities/utilities.scss";
+@import './Utilities/utilities.scss';
 
 // * Import atoms
 
 // * Import molecules
+@import './Molecules/spinner.scss';
 
 // * Import organisms
 
 // * Import templates
 
 // * Import pages
-@import "./pages/home.scss";
-@import "./pages/symptomsList.scss";
+@import './pages/home.scss';
+@import './pages/symptomsList.scss';
