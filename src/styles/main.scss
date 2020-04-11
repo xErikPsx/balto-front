@@ -10,6 +10,7 @@
 // * Import atoms
 
 // * Import molecules
+@import './Molecules/spinner.scss';
 
 // * Import organisms
 
@@ -17,3 +18,4 @@
 
 // * Import pages
 @import './pages/home.scss';
+@import './pages/symptomsList.scss';
