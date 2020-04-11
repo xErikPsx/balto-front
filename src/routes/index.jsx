@@ -1,20 +1,20 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
-// ? Components
 import Spinner from '../components/Molecules/spinner';
 
-const Home = lazy(() => import('../components/Pages/Home'));
-
+// * Containers
 const Symptoms = lazy(() => import('../containers/Symptoms/Symptoms'));
+const LandingPage = lazy(() => import('../containers/Landing/Landing'));
+const Error404 = lazy(() => import('../containers/Errors/Error404'));
 
 const AppRoutes = () => {
   return (
     <Suspense fallback={<Spinner height={150} width={150} />}>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={LandingPage} />
           <Route exact path="/symptoms" component={Symptoms} />
+          <Route component={Error404} />
         </Switch>
       </BrowserRouter>
     </Suspense>
