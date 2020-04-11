@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// * Media
+import wallpaperMedicine from '../../../media/doctors.jpg';
+import wallpaperPills2 from '../../../media/pills2.png';
+import virus from '../../../media/covidgif.gif';
+import grafica from '../../../media/grafica.gif';
+import grafica01 from '../../../media/grafica01.gif';
+import grafica02 from '../../../media/grafica02.gif';
 
 // * Organisms / Components
 
 function LandingPage() {
   return (
     <div className="landingPage">
-      <h2>Navbar Here</h2>
       <header className="landingPage__header">
         <img
           src="https://cdn130.picsart.com/296232172285211.png?type=webp&to=min&r=640"
@@ -18,6 +24,48 @@ function LandingPage() {
           La mejor herramienta de administración de pacientes con Covid-19
         </p>
       </header>
+
+      <img
+        className="landingPage__wallpaper"
+        src={wallpaperMedicine}
+        alt="doctors"
+      />
+
+      <div className="landingPage__virus">
+        <div className="landingPage__virus__gif">
+          <img className="landingPage__gif" src={virus} alt="virus" />
+        </div>
+      </div>
+
+      <div className="landingPage__virus">
+        <div className="landingPage__virus__gif">
+          <img
+            className="landingPage__gif landingPage__graph"
+            src={grafica}
+            alt="virus"
+          />
+        </div>
+      </div>
+
+      <div className="landingPage__virus">
+        <div className="landingPage__virus__gif">
+          <img
+            className="landingPage__gif landingPage__graph"
+            src={grafica01}
+            alt="virus"
+          />
+        </div>
+      </div>
+
+      <div className="landingPage__virus">
+        <div className="landingPage__virus__gif">
+          <img
+            className="landingPage__gif landingPage__graph"
+            src={grafica02}
+            alt="virus"
+          />
+        </div>
+      </div>
 
       <div className="landingPage__sections">
         <section className="landingPage__section">
