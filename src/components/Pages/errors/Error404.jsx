@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom';
 function Error404Page() {
   return (
     <div className="error404Page">
-      <h2 className="error404Page__title">
-        ¡Ooops! Has encontrado el Error404
-      </h2>
+      <h2 className="error404Page__title">¡Ooops!</h2>
       <div className="error404Page__dogContainer">
         <img src={ErrorDog} alt="" className="error404Page__dogImage" />
       </div>
@@ -17,7 +15,7 @@ function Error404Page() {
         <span> 🙁</span>
       </h3>
       <Link to="../" className="error404Page__link">
-        Haz clic en este enlace para volver al inicio
+        Haz clic o toca aquí para volver al inicio
       </Link>
     </div>
   );
