@@ -7,13 +7,14 @@ import Spinner from '../components/Molecules/spinner';
 const Home = lazy(() => import('../components/Pages/Home'));
 
 const Symptoms = lazy(() => import('../containers/Symptoms/Symptoms'));
+const LandingPage = lazy(() => import('../containers/Landing/Landing'));
 
 const AppRoutes = () => {
   return (
     <Suspense fallback={<Spinner height={150} width={150} />}>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={LandingPage} />
           <Route exact path="/symptoms" component={Symptoms} />
         </Switch>
       </BrowserRouter>
