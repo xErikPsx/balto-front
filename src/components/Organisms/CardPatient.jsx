@@ -21,13 +21,13 @@ const CardPatient = ({patient}) => {
     }
     actions={[
         <Link to={`/patient/${id}`}>
-            <Button type="primary" key="setting" block>Ver</Button>,
+            <Button type="primary" key={id} block>Ver</Button>,
         </Link>
     ]}
   >
     <Meta
       title={name}
-      description={metaData.map(({index,value})=><ListItem index={index} value={value} />)}
+      description={metaData.map(({index,value},i)=><ListItem index={index} value={value} key={i + "meta"} />)}
     />
   </Card>
     );
