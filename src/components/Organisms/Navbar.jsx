@@ -4,8 +4,8 @@ import Icon from '@mdi/react';
 import { mdiBackburger, mdiMenu } from '@mdi/js';
 import 'antd/dist/antd.css';
 import SideBar from './SideBar';
-// * Media
-import baltoLogo from '../../media/balto_logo.png';
+// * Assets
+import baltoLogo from '../../assets/balto_logo.png';
 
 const { Header } = Layout;
 

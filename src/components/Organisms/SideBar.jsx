@@ -1,9 +1,9 @@
 import React from 'react';
 import { Menu } from 'antd';
-// * Media
-import baltoLogo from '../../media/balto_logo.png';
+// * Assets
+import baltoLogo from '../../assets/balto_logo.png';
 
-const SideBar = (props) => {
+const SideBar = props => {
   const { sideBarStatus } = props;
   return (
     <div className={`sidebar ${sideBarStatus}`}>
