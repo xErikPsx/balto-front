@@ -35,10 +35,10 @@ function Navbar(props) {
             <a href="/patients">Pacientes</a>
           </Menu.Item>
           <Menu.Item key="4">
-            <a href="/login">Iniciar Sesión</a>
+            <a href="/form-patients">Nuevo Paciente</a>
           </Menu.Item>
           <Menu.Item key="5">
-            <a href="/register">Registrarse</a>
+            <a href="/login">Iniciar Sesión</a>
           </Menu.Item>
         </Menu>
       </div>
