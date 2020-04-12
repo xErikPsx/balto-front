@@ -6,6 +6,9 @@ import Spinner from '../components/Molecules/spinner';
 const Symptoms = lazy(() => import('../containers/Symptoms/Symptoms'));
 const LandingPage = lazy(() => import('../containers/Landing/Landing'));
 const Error404 = lazy(() => import('../containers/Errors/Error404'));
+const FormPatients = lazy(() =>
+  import('../containers/FormPatients/FormPatients')
+);
 
 const AppRoutes = () => {
   return (
@@ -14,6 +17,7 @@ const AppRoutes = () => {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/symptoms" component={Symptoms} />
+          <Route exact path="/form-patients" component={FormPatients} />
           <Route component={Error404} />
         </Switch>
       </BrowserRouter>
