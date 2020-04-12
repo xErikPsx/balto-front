@@ -6,7 +6,9 @@
     margin-bottom: 0px;
   }
 
-  &__title,
+  &__title {
+    text-align: center;
+  }
   &__subtitle {
     border-bottom: 2px solid $secondaryColor;
   }
@@ -34,5 +36,24 @@
   }
   .ant-row {
     margin-bottom: 1rem;
+  }
+  .form-patients__estadoWrapper div > .ant-radio-button-wrapper {
+    border: none;
+  }
+  &--shadow {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .ant-form-item-control-input-content > &__cancelBtn,
+  .ant-form-item-control-input-content > &__registrarBtn {
+    margin: 1rem;
+  }
+  .ant-radio-group > &__rdb--deleteOutline:focus {
+    outline: 0;
+    border: 0;
+  }
+  .ant-radio-button-wrapper:not(:first-child)::before {
+    content: none;
   }
 }
