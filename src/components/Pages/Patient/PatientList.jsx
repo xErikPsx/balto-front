@@ -6,7 +6,10 @@ import CardPatient from '../../Organisms/CardPatient';
 const PatientList = () => {
   const [patients, setPatients] = useState([]);
   const madeApiRequest = async () => {
-    const { response, error } = await api.request('GET', 'patients');
+    const { response, error } = await api.request(
+      'GET',
+      'patients/?offset=0&limit=100'
+    );
     if (!error) {
       setPatients(response.data);
     }
