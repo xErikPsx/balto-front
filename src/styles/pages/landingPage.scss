@@ -88,6 +88,12 @@
 // * Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .landingPage {
+    &__header {
+      &__image {
+        width: 100px;
+      }
+    }
+
     &__graph {
       width: 60%;
     }

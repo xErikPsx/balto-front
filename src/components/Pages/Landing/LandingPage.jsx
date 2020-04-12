@@ -7,6 +7,7 @@ import virus from '../../../media/covidgif.gif';
 import grafica from '../../../media/grafica.gif';
 import grafica01 from '../../../media/grafica01.gif';
 import grafica02 from '../../../media/grafica02.gif';
+import baltoLogo from '../../../media/balto_logo.png';
 
 // * Organisms / Components
 
@@ -15,7 +16,7 @@ function LandingPage() {
     <div className="landingPage">
       <header className="landingPage__header">
         <img
-          src="https://cdn130.picsart.com/296232172285211.png?type=webp&to=min&r=640"
+          src={baltoLogo}
           className="landingPage__header__image"
           alt="logo"
         />
