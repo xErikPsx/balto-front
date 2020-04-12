@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Input, Row, Col, Select, Checkbox, Button, Radio } from 'antd';
 import { FrownOutlined, SmileOutlined, MehOutlined } from '@ant-design/icons';
+import api from '../../../utils/api';
 
 const colPadding = { padding: '6px 6px' };
 
@@ -25,6 +26,22 @@ export default function FormPatientsPage() {
 
   const onFinish = values => {
     console.log('Received values of form: ', values);
+    postData({ ...values, age: parseInt(values.age) });
+  };
+
+  const onReset = () => {
+    //Clear inputs
+    form.resetFields();
+  };
+
+  const postData = async data => {
+    try {
+      console.log('');
+      let result = await api.request('POST', '/patients', data);
+      console.log('RESULT: ', result);
+    } catch (err) {
+      console.error('Something went wrong', err);
+    }
   };
 
   return (
@@ -58,7 +75,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="nombre"
+                name="name"
                 label="Nombre(s):"
                 rules={[
                   {
@@ -81,7 +98,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="apellidos"
+                name="lastName"
                 label="Apellidos:"
                 rules={[
                   {
@@ -104,7 +121,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="edad"
+                name="age"
                 label="Edad:"
                 rules={[
                   {
@@ -127,7 +144,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="genero"
+                name="gender"
                 label="Género"
                 hasFeedback
                 rules={[
@@ -150,7 +167,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="ciudad"
+                name="stateCountry"
                 label="Ciudad:"
                 rules={[
                   {
@@ -179,7 +196,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="telefono"
+                name="phone"
                 label="Teléfono:"
                 rules={[
                   {
@@ -202,7 +219,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="direccion"
+                name="address"
                 label="Dirección:"
                 rules={[
                   {
@@ -276,7 +293,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="peso"
+                name="weight"
                 label="Peso:"
               >
                 <Input type="number" suffix="kg" />
@@ -292,7 +309,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="estatura"
+                name="height"
                 label="Estatura:"
               >
                 <Input type="number" suffix="m" />
@@ -308,7 +325,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="tipoSangre"
+                name="bloodType"
                 label="Tipo de sangre:"
                 hasFeedback
               >
@@ -328,7 +345,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="alergias"
+                name="allergies"
                 label="Alergias:"
               >
                 <Input.TextArea />
@@ -340,7 +357,7 @@ export default function FormPatientsPage() {
               <h3 className="form-patients__subtitle">Síntomas</h3>
             </Col>
             <Col xs={24} sm={24} style={colPadding}>
-              <Form.Item colon={true} name="sintomas">
+              <Form.Item colon={true} name="symptoms">
                 <Checkbox.Group>
                   <Row>
                     <Col
@@ -453,7 +470,7 @@ export default function FormPatientsPage() {
               <div className="form-patients__estadoWrapper">
                 <Form.Item
                   colon={true}
-                  name="estadoActual"
+                  name="status"
                   rules={[
                     {
                       required: true,
@@ -494,7 +511,7 @@ export default function FormPatientsPage() {
               <Form.Item
                 colon={true}
                 className="form-patients--remove-row-mb"
-                name="Observaciones"
+                name="comment"
               >
                 <Input.TextArea />
               </Form.Item>
@@ -502,7 +519,9 @@ export default function FormPatientsPage() {
           </Row>
 
           <Form.Item>
-            <Button className="form-patients__cancelBtn">Cancelar</Button>
+            <Button className="form-patients__cancelBtn" onClick={onReset}>
+              Limpiar datos
+            </Button>
             <Button
               type="primary"
               htmlType="submit"

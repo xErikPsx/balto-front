@@ -6,7 +6,7 @@ import BaltoLogo from '../../media/balto_logo.png';
 import { Link } from 'react-router-dom';
 
 function LoginForm() {
-  const onFinish = (values) => {
+  const onFinish = values => {
     console.log('Received values of form: ', values);
   };
 
@@ -16,7 +16,7 @@ function LoginForm() {
         name="normal_login "
         className="login-form"
         initialValues={{
-          remember: true,
+          remember: true
         }}
         onFinish={onFinish}
       >
@@ -29,8 +29,8 @@ function LoginForm() {
           rules={[
             {
               required: true,
-              message: 'Por favor ingrese su usuario.',
-            },
+              message: 'Por favor ingrese su usuario.'
+            }
           ]}
         >
           <Input
@@ -44,8 +44,8 @@ function LoginForm() {
           rules={[
             {
               required: true,
-              message: 'Por favor, ingrese su contraseña.',
-            },
+              message: 'Por favor, ingrese su contraseña.'
+            }
           ]}
         >
           <Input
@@ -60,7 +60,7 @@ function LoginForm() {
             <Checkbox>Recordarme</Checkbox>
           </Form.Item>
 
-          <a className="login-form-forgot" href="">
+          <a className="login-form-forgot" href="/#">
             ¿Olvidaste tu contraseña?
           </a>
         </Form.Item>
@@ -70,10 +70,9 @@ function LoginForm() {
             <Button
               style={{ marginRight: '20px' }}
               size="large"
-              className="loginButton"
+              className="loginButton login-form-button"
               type="primary"
               link="./patients"
-              className="login-form-button"
             >
               Iniciar sesión
             </Button>
