@@ -1,0 +1,31 @@
+.form-patients {
+  overflow-x: hidden;
+  padding: 0.5em;
+
+  .ant-row > .ant-col > &--remove-row-mb {
+    margin-bottom: 0px;
+  }
+
+  &__title,
+  &__subtitle {
+    border-bottom: 2px solid $secondaryColor;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  .ant-col > &--symptomsCheckbox {
+    line-height: 2rem;
+  }
+  &__estadoWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    div {
+      text-align: center;
+    }
+  }
+  &__estado-icono {
+    font-size: 2.5rem;
+  }
+}
