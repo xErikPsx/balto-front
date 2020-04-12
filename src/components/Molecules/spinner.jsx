@@ -1,7 +1,7 @@
 import React from 'react';
 import Loader from 'react-loader-spinner';
 
-export default function spinner(props) {
+export default function Spinner(props) {
   return (
     <div className="spinner">
       <Loader
