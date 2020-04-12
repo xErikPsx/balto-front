@@ -8,7 +8,7 @@ const PatientList = () => {
   const madeApiRequest = async () => {
     const { response, error } = await api.request(
       'GET',
-      'patients/?offset=0&limit=100'
+      '/patients/?offset=0&limit=100'
     );
     if (!error) {
       setPatients(response.data);
