@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
-// * Media
+// * Assets
 import { symptomsRoutes } from '../../assets/symptomsRoutes';
 
 const { Meta } = Card;

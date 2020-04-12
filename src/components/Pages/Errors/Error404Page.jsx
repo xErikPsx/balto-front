@@ -11,7 +11,7 @@ function Error404Page() {
       </div>
       <h3 className="error404Page__messagge">
         {' '}
-        Lo sentimos, pero la página que estás buscando no la podimos encontrar
+        Lo sentimos, pero la página que estás buscando no la pudimos encontrar
         <span role="img" aria-label="Sad">
           {' '}
           🙁
