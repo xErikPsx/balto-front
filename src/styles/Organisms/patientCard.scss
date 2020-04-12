@@ -1,0 +1,38 @@
+.patient {
+  margin-bottom: 15px;
+  flex: 0 1 calc(20% - 8px);
+  margin-bottom: 5%;
+  & img {
+    height: 180px;
+    background-color: rgb(167, 166, 166);
+  }
+}
+// TODO: check this...
+.ant-card-bordered {
+  margin-bottom: 5% !important;
+  background-color: #dfdfdf;
+  // color: $green;
+  & .ant-card-cove {
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+  }
+  & .ant-card-body {
+    // background-color: #dfdfdf;
+    // border-color: #dfdfdf;
+    padding-bottom: 5px;
+    & .ant-card-meta-title {
+      font-size: 20px;
+      //   color: $green;
+    }
+  }
+  & .ant-card-actions {
+    border-radius: 0px 0px 7px 7px;
+    // background-color: #dfdfdf;
+    // border-color: #dfdfdf;
+    padding: 0px 30%;
+    & button {
+      background-color: $blue;
+      border-color: $blue;
+    }
+  }
+}
