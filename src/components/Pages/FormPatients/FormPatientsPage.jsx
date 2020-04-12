@@ -1,5 +1,14 @@
 import React from 'react';
-import { Form, Input, Row, Col, Select, Checkbox, DatePicker } from 'antd';
+import {
+  Form,
+  Input,
+  Row,
+  Col,
+  Select,
+  Checkbox,
+  DatePicker,
+  Button
+} from 'antd';
 import { FrownOutlined, SmileOutlined, MehOutlined } from '@ant-design/icons';
 import imagePlaceholder from '../../../assets/FormPatientsPage/personPlaceholder.jpg';
 import PhotoUpload from '../../Molecules/PhotoUpload/PhotoUpload';
@@ -580,6 +589,38 @@ export default function FormPatientsPage() {
               </Form.Item>
             </Col>
           </Row>
+          <Row>
+            <Col
+              xs={24}
+              sm={bkp.sm}
+              lg={bkp.lg}
+              xxl={bkp.xxl}
+              style={colPaddingX}
+            >
+              <h3 className="form-patients__subtitle">Obvseraciones</h3>
+            </Col>
+            <Col
+              xs={24}
+              sm={bkp.sm}
+              lg={bkp.lg}
+              xxl={bkp.xxl}
+              style={colPaddingX}
+            >
+              <Form.Item
+                className="form-patients--remove-row-mb"
+                name="alergias"
+                label="Alergias::"
+              >
+                <Input.TextArea />
+              </Form.Item>
+            </Col>
+          </Row>
+
+          <Form.Item>
+            <Button type="primary" htmlType="submit">
+              Registrar
+            </Button>
+          </Form.Item>
         </Form>
       </div>
     </>

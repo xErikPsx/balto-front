@@ -28,4 +28,11 @@
   &__estado-icono {
     font-size: 2.5rem;
   }
+  .ant-form-item-control-input-content {
+    display: flex;
+    justify-content: center;
+  }
+  .ant-row {
+    margin-bottom: 1rem;
+  }
 }
