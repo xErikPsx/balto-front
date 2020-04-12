@@ -5,7 +5,7 @@ import { mdiBackburger, mdiMenu } from '@mdi/js';
 import 'antd/dist/antd.css';
 import SideBar from './SideBar';
 // * Assets
-import baltoLogo from '../../assets/balto_logo.png';
+import baltoLogo from '../../media/balto_logo.png';
 
 const { Header } = Layout;
 

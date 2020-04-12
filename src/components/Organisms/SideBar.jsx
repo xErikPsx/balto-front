@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from 'antd';
 // * Assets
-import baltoLogo from '../../assets/balto_logo.png';
+import baltoLogo from '../../media/balto_logo.png';
 
 const SideBar = (props) => {
   const { sideBarStatus } = props;

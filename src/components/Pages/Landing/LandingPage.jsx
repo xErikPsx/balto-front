@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // * Media
-import wallpaperMedicine from '../../../assets/doctors.jpg';
-// import wallpaperPills2 from '../../../assets/pills2.png';
-import virus from '../../../assets/covidgif.gif';
-import grafica from '../../../assets/grafica.gif';
-import grafica01 from '../../../assets/grafica01.gif';
-import grafica02 from '../../../assets/grafica02.gif';
-import baltoLogo from '../../../assets/balto_logo.png';
+import wallpaperMedicine from '../../../media/doctors.jpg';
+// import wallpaperPills2 from '../../../media/pills2.png';
+import virus from '../../../media/covidgif.gif';
+import grafica from '../../../media/grafica.gif';
+import grafica01 from '../../../media/grafica01.gif';
+import grafica02 from '../../../media/grafica02.gif';
+import baltoLogo from '../../../media/balto_logo.png';
 
 // * Organisms / Components
 
