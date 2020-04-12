@@ -5,7 +5,7 @@ import { mdiBackburger, mdiMenu } from '@mdi/js';
 import 'antd/dist/antd.css';
 import SideBar from './SideBar';
 // * Assets
-import baltoLogo from '../../assets/balto_logo.png';
+import baltoLogo from '../../media/balto_logo.png';
 
 const { Header } = Layout;
 
@@ -35,10 +35,10 @@ function Navbar(props) {
             <a href="/patients">Pacientes</a>
           </Menu.Item>
           <Menu.Item key="4">
-            <a href="/login">Iniciar Sesión</a>
+            <a href="/form-patients">Nuevo Paciente</a>
           </Menu.Item>
           <Menu.Item key="5">
-            <a href="/register">Registrarse</a>
+            <a href="/login">Iniciar Sesión</a>
           </Menu.Item>
         </Menu>
       </div>
