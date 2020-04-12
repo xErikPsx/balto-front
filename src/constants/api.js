@@ -1,3 +1,3 @@
 export default {
-  apiEndPoint: 'https://baltoapi.herokuapp.com/',
+  apiEndPoint: 'https://baltoapi.herokuapp.com'
 };
