@@ -1,0 +1,37 @@
+.ant-layout-header{
+    height: 8vh;
+    background-color: $blue;
+    @media screen and (max-width: 600px) {
+        &{
+            display: flex !important;
+        }
+        & > .mobile{
+            display: flex !important;
+        }
+        & > .web{
+            display: none !important;
+        }
+    }
+    & > .mobile{
+        display: none;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    & > .web{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    & .logo{
+        background-color: $gray;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+}
