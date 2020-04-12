@@ -1,0 +1,61 @@
+.ant-layout-header {
+  height: 8vh;
+  background-color: #272727 !important;
+  @media screen and (max-width: 600px) {
+    & {
+      display: flex !important;
+    }
+    & > .mobile {
+      display: flex !important;
+    }
+    & > .web {
+      display: none !important;
+    }
+  }
+  & > .mobile {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  & > .web {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  & .logo {
+    background-color: #272727;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .logo > img {
+    width: 50px;
+  }
+}
+
+.ant-menu-item {
+  background-color: #272727;
+}
+
+// ant-menu-item ant-menu-item-only-child ant-menu-item-selected
+// .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+
+.ant-menu-item:hover {
+  background-color: #4f98ca !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #4f98ca !important;
+}
+
+.ant-menu.ant-menu-dark,
+.ant-menu-dark,
+.ant-menu-sub {
+  background-color: #272727 !important;
+}

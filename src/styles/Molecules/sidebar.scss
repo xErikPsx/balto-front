@@ -1,0 +1,33 @@
+.sidebar {
+  background-color: $blue-2;
+  position: absolute;
+  top: 64px;
+  width: 30vw;
+  left: 0px;
+  transition: 0.3s;
+  z-index: 999;
+  &.hide {
+    & .logo {
+      font-size: 1px;
+    }
+    & ul {
+      & li {
+        font-size: 0px;
+      }
+      & .ant-menu-item-selected {
+        display: none;
+      }
+    }
+
+    width: 0px;
+    visibility: hidden;
+  }
+  & .logo {
+    width: 100%;
+    border-radius: 0px;
+    height: 25%;
+  }
+  & ul {
+    padding: 10% 0px;
+  }
+}

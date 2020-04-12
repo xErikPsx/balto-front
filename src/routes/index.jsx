@@ -3,9 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Spinner from '../components/Molecules/spinner';
 
 // * Containers
-
-const Home = lazy(() => import('../components/Pages/Home'));
 const Symptoms = lazy(() => import('../containers/Symptoms/Symptoms'));
+const LandingPage = lazy(() => import('../containers/Landing/Landing'));
+const Error404 = lazy(() => import('../containers/Errors/Error404'));
 const FormPatients = lazy(() =>
   import('../containers/FormPatients/FormPatients')
 );
@@ -15,9 +15,10 @@ const AppRoutes = () => {
     <Suspense fallback={<Spinner height={150} width={150} />}>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={LandingPage} />
           <Route exact path="/symptoms" component={Symptoms} />
           <Route exact path="/form-patients" component={FormPatients} />
+          <Route component={Error404} />
         </Switch>
       </BrowserRouter>
     </Suspense>
